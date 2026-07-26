@@ -1,0 +1,22 @@
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Canonical: https://www.evaneos.com/.well-known/security.txt
+
+Contact: mailto:security@evaneos.com
+
+Encryption: https://keys.openpgp.org/vks/v1/by-fingerprint/AACE4E09E738BB0985A8C684EB23FEA822676521
+
+Policy: https://vdp.evaneos.com/
+
+Preferred-Languages: en-US, fr-FR
+
+Expires: 2028-01-13T10:21:41Z
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQSqzk4J5zi7CYWoxoTrI/6oImdlIQUCaWZJ9AAKCRDrI/6oImdl
+IckDAQCrWRPbHlq83EfgHiWWEUmQDZowkylehxnlh1EjWsKDCgEAn3tdj94bRyYK
+XQ2wmVma6zEOMg3e8nSGQ35l86CaVgM=
+=CMJo
+-----END PGP SIGNATURE-----

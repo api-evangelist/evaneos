@@ -1,8 +1,24 @@
 aid: evaneos
 name: Evaneos
-description: 'Evaneos is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Marketplace. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Evaneos is a French online marketplace for tailor-made travel, founded in 2009 and
+  headquartered in Paris. It connects travelers directly with a curated, continuously-evaluated network
+  of 600+ expert local travel agencies across 160+ destinations, who design fully customized itineraries.
+  A certified B Corp since 2022, Evaneos champions an ethical model in which at least 85% of each trip''s
+  cost benefits local economies, and it has served more than 800,000 travelers at a 97% satisfaction rate.
+  Backed by Partech, the company runs a coordinated vulnerability disclosure program but publishes no
+  public product API; its GitHub organization hosts internal DevOps, security, and AI tooling.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://images.prismic.io/evaneos/ad9Xa51ZCF7ETNBk_spenser-sembrat-zpMLd4VXlGk-unsplash-2.jpg?auto=format,compress&rect=0,425,6000,3150&w=1200&h=630
 url: https://raw.githubusercontent.com/api-evangelist/evaneos/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Marketplace
+- Travel
+- Tourism
+- Tailor-Made Trips
+- Local Agencies
+- Sustainable Travel
+- B Corp
+- France
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +48,30 @@ maintainers:
 common:
 - type: Website
   url: https://www.evaneos.com/
+- type: Support
+  url: https://www.evaneos.com/about-us/contact/
+- type: Login
+  url: https://www.evaneos.com/login
+- type: Blog
+  url: https://tech.evaneos.com/
+- type: TermsOfService
+  url: https://www.evaneos.com/evaneos/general-terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.evaneos.com/evaneos/privacy-policy/
+- type: GitHubOrganization
+  url: https://github.com/evaneos
+- type: SecurityTxt
+  url: well-known/evaneos-security.txt
+- type: WellKnown
+  url: well-known/evaneos-well-known.yml
+- type: VulnerabilityDisclosure
+  url: security/evaneos-vulnerability-disclosure.yml
+- type: Security
+  url: https://vdp.evaneos.com/
+- type: DomainSecurity
+  url: security/evaneos-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
