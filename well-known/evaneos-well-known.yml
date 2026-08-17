@@ -1,15 +1,77 @@
-generated: '2026-07-19'
+generated: '2026-08-17'
 method: searched
 host: https://www.evaneos.com
+note: >-
+  Only /.well-known/security.txt returns a real document (a PGP-signed RFC 9116 file). Every
+  other discovery path on every Evaneos host 404s, and the partner host answers a Cloudflare
+  bot challenge (403) for all paths. The WellKnown + SecurityTxt pointers in apis.yml rest on
+  the security.txt 200 alone.
 documents:
-- path: /.well-known/security.txt          # RFC 9116
+- path: /.well-known/security.txt
   status: 200
   file: evaneos-security.txt
-- path: /.well-known/openid-configuration   # OIDC discovery
+  content_type: text/plain; charset=utf-8
+  format: RFC 9116, PGP-signed (expires 2028-01-13)
+- path: /.well-known/openid-configuration
   status: 404
-- path: /.well-known/oauth-authorization-server  # RFC 8414
+- path: /.well-known/oauth-authorization-server
   status: 404
-- path: /.well-known/api-catalog            # RFC 9727
+- path: /.well-known/oauth-protected-resource
+  status: 404
+- path: /.well-known/api-catalog
   status: 404
 - path: /.well-known/ai-plugin.json
   status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+- path: /.well-known/mcp.json
+  status: 404
+- path: /.well-known/ai.txt
+  status: 404
+- path: /.well-known/aipref
+  status: 404
+other_hosts:
+- host: https://tech.evaneos.com
+  note: engineering blog; every path answers a Cloudflare bot challenge to automated clients
+  probes:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/agent-card.json
+    status: 403
+- host: https://partner.evaneos.net
+  note: partner/affiliate marketing site behind a Cloudflare interstitial ("Just a moment...")
+  probes:
+  - path: /.well-known/agent-card.json
+    status: 301
+  - path: /
+    status: 403
+- host: https://api.evaneos.com
+  note: does not resolve (no DNS)
+  probes:
+  - path: /
+    status: 0
+non_well_known_probes:
+- url: https://www.evaneos.com/llms.txt
+  status: 200
+  note: real provider-published llms.txt, saved verbatim to llms/evaneos-llms.txt
+- url: https://www.evaneos.com/openapi.json
+  status: 404
+- url: https://www.evaneos.com/swagger.json
+  status: 404
+- url: https://www.evaneos.com/api-docs
+  status: 404
+- url: https://www.evaneos.com/graphql
+  status: 404
+- url: https://developer.evaneos.com/
+  status: 0
+- url: https://docs.evaneos.com/
+  status: 0
+- url: https://status.evaneos.com/
+  status: 0
+- url: https://www.evaneos.com/robots.txt
+  status: 200
+  note: >-
+    robots.txt disallows /api/*, /varapi/*, /widget/*, /account/* — internal first-party
+    endpoints behind the web app, not a documented public API.

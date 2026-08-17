@@ -1,0 +1,162 @@
+generated: '2026-08-17'
+method: searched
+source: >-
+  registry.npmjs.org (@evaneos scope) + repo.packagist.org (evaneos/* vendor) +
+  https://github.com/evaneos
+note: >-
+  Evaneos publishes real first-party open-source libraries under the @evaneos npm scope and the
+  evaneos Packagist vendor, but NONE of them is a client SDK for an Evaneos API — there is no
+  public Evaneos API to wrap. Every package below is internal engineering tooling: shared
+  lint/tsconfig, an internal B2B React component library, a PHP framework stack, an AMQP
+  messaging component, a JWT utility and an internal asset-service SDK (Gringotts is an Evaneos
+  internal microservice, not a public product). No `SDKs` pointer is emitted for this artifact
+  because emitting one would credit Evaneos with API client libraries it does not ship.
+packages:
+- language: javascript
+  registry: npm
+  name: "@evaneos/front-config"
+  url: https://www.npmjs.com/package/@evaneos/front-config
+  install: npm install @evaneos/front-config
+  official: true
+  api_client: false
+  version: 5.4.3
+  published: '2026-05-13'
+  note: Shared JS/TS/TSX linting + formatting configuration for Evaneos front-end projects.
+- language: javascript
+  registry: npm
+  name: "@evaneos/b2b-ui"
+  url: https://www.npmjs.com/package/@evaneos/b2b-ui
+  install: npm install @evaneos/b2b-ui
+  official: true
+  api_client: false
+  version: 8.1.1
+  published: '2026-06-04'
+  note: React component library for Evaneos' internal B2B (local-agency) design system.
+- language: javascript
+  registry: npm
+  name: "@evaneos/eslint-config"
+  url: https://www.npmjs.com/package/@evaneos/eslint-config
+  install: npm install @evaneos/eslint-config
+  official: true
+  api_client: false
+  version: 4.5.5
+  published: '2024-10-24'
+- language: javascript
+  registry: npm
+  name: "@evaneos/eslint-config-base"
+  url: https://www.npmjs.com/package/@evaneos/eslint-config-base
+  install: npm install @evaneos/eslint-config-base
+  official: true
+  api_client: false
+  version: 4.5.5
+  published: '2024-10-24'
+- language: javascript
+  registry: npm
+  name: "@evaneos/typescript-config"
+  url: https://www.npmjs.com/package/@evaneos/typescript-config
+  install: npm install @evaneos/typescript-config
+  official: true
+  api_client: false
+  version: 4.5.5
+  published: '2024-10-24'
+- language: php
+  registry: packagist
+  name: evaneos/pyrite
+  url: https://packagist.org/packages/evaneos/pyrite
+  install: composer require evaneos/pyrite
+  official: true
+  api_client: false
+  version: v5.0.2
+  published: '2025-06-11'
+  note: PHP framework built on the Stack PHP principle; the most recently released Evaneos PHP lib.
+- language: php
+  registry: packagist
+  name: evaneos/burrow
+  url: https://packagist.org/packages/evaneos/burrow
+  install: composer require evaneos/burrow
+  official: true
+  api_client: false
+  version: v4.6.0
+  published: '2021-10-05'
+  note: AMQP messaging/event component — the closest thing to an event surface Evaneos publishes,
+    but it is a library, not a hosted event API.
+- language: php
+  registry: packagist
+  name: evaneos/jwt
+  url: https://packagist.org/packages/evaneos/jwt
+  install: composer require evaneos/jwt
+  official: true
+  api_client: false
+  version: v1.0.0
+  published: '2023-03-20'
+- language: php
+  registry: packagist
+  name: evaneos/evframework
+  url: https://packagist.org/packages/evaneos/evframework
+  install: composer require evaneos/evframework
+  official: true
+  api_client: false
+  version: v6.1.1
+  published: '2022-02-03'
+- language: php
+  registry: packagist
+  name: evaneos/berthe
+  url: https://packagist.org/packages/evaneos/berthe
+  install: composer require evaneos/berthe
+  official: true
+  api_client: false
+  version: v6.3.0
+  published: '2013-10-11'
+- language: php
+  registry: packagist
+  name: evaneos/dic-it
+  url: https://packagist.org/packages/evaneos/dic-it
+  install: composer require evaneos/dic-it
+  official: true
+  api_client: false
+  version: v2.2.1
+  published: '2013-11-01'
+- language: php
+  registry: packagist
+  name: evaneos/daemon
+  url: https://packagist.org/packages/evaneos/daemon
+  install: composer require evaneos/daemon
+  official: true
+  api_client: false
+  version: v2.1.0
+  published: '2018-09-26'
+  note: GitHub repository Evaneos/daemon is archived.
+- language: php
+  registry: packagist
+  name: evaneos/gringotts-sdk
+  url: https://packagist.org/packages/evaneos/gringotts-sdk
+  install: composer require evaneos/gringotts-sdk
+  official: true
+  api_client: false
+  version: v0.10.0
+  published: '2016-11-21'
+  note: PHP SDK for Gringotts, an Evaneos INTERNAL asset-storage microservice. Not a public API
+    client; the GitHub repository is archived.
+- language: php
+  registry: packagist
+  name: evaneos/security
+  url: https://packagist.org/packages/evaneos/security
+  install: composer require evaneos/security
+  official: true
+  api_client: false
+  version: v0.1.0
+  published: '2016-02-03'
+summary:
+  total: 15
+  official: 15
+  api_clients: 0
+  registries:
+  - npm
+  - packagist
+  maintained_2026:
+  - "@evaneos/front-config"
+  - "@evaneos/b2b-ui"
+  decay_note: >-
+    Ten of the fifteen first-party packages last published before 2024; the PHP framework
+    line (berthe, dic-it, evframework, burrow) is effectively frozen. Only the front-end
+    tooling (@evaneos/front-config, @evaneos/b2b-ui) shipped in 2026.

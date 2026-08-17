@@ -1,0 +1,30 @@
+generated: '2026-08-17'
+method: searched
+source: https://partner.evaneos.net/marketing-partnerships/
+plan_count: 0
+note: >-
+  Evaneos publishes no developer plans, API tiers or API pricing of any kind — there is no
+  public API and no developer portal (developer.evaneos.com and docs.evaneos.com do not
+  resolve). The only API Evaneos markets is a partner/affiliate product-feed API described on
+  partner.evaneos.net, which is offered through a partnership conversation with no published
+  tiers, quotas or prices; commercial terms there are stated as partnership models (CPC, CPL,
+  revenue share) rather than plans. Consumer-side pricing is per-trip and quoted by the local
+  agency, not a subscription. Recorded as an honest zero rather than omitted.
+commercial_models_referenced:
+- name: Cost per click (CPC)
+  price: not published
+  source: https://partner.evaneos.net/marketing-partnerships/
+- name: Cost per lead (CPL)
+  price: not published
+  source: https://partner.evaneos.net/marketing-partnerships/
+- name: Revenue share
+  price: not published
+  source: https://partner.evaneos.net/marketing-partnerships/
+evidence:
+- url: https://partner.evaneos.net/marketing-partnerships/
+  status: 403
+  note: Cloudflare interstitial to automated clients; content read through the search index.
+- url: https://developer.evaneos.com/
+  status: 0
+  note: does not resolve
+plans: []

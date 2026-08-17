@@ -1,0 +1,20 @@
+generated: '2026-08-17'
+method: searched
+source: https://www.evaneos.com/robots.txt
+limit_count: 0
+note: >-
+  No published rate limits. Evaneos operates no public API and no developer documentation, so
+  there is no documented quota, window, burst, exhaustion status code or RateLimit-* response
+  header to record. The only machine-facing policy Evaneos publishes is crawl policy in
+  robots.txt (which disallows the internal /api/*, /varapi/*, /widget/* and /account/* paths
+  used by its own web app) — a crawl rule, not an API rate limit. Recorded as an honest zero.
+headers: []
+limits: []
+evidence:
+- url: https://www.evaneos.com/robots.txt
+  status: 200
+- url: https://www.evaneos.com/openapi.json
+  status: 404
+- url: https://docs.evaneos.com/
+  status: 0
+  note: does not resolve
