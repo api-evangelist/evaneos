@@ -9,6 +9,17 @@ description: 'Evaneos is a French online marketplace for tailor-made travel, fou
   public product API — the only API it markets is a partner/affiliate product-feed API offered on
   request through partner.evaneos.net — while publishing a real llms.txt for AI agents; its GitHub
   organization hosts internal DevOps, security, and AI tooling.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
